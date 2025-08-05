@@ -1,3 +1,4 @@
 .vscode/
 json_dump.json
 copy.ps1
+server/.venv/
