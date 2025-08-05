@@ -2,3 +2,5 @@
 json_dump.json
 copy.ps1
 server/.venv/
+server/content.txt
+server/__pycache__

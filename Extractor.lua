@@ -110,7 +110,7 @@ local function collect_data()
             card_name = c.config.card.name,
             card_pos = c.config.center.pos.x,
             card_type = c.config.center.key,
-            card_seal = c.seal or "NONE",
+            card_seal = c.seal or "no",
         }
         table.insert(data.hand, card_data)
     end
