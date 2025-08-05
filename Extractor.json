@@ -1,0 +1,14 @@
+{
+	"id": "Extractor",
+	"name": "Extractor",
+	"display_name": "Extractor",
+	"author": ["Rhodso"],
+	"description": "Extracts data from the game",
+	"prefix": "Extractor",
+	"main_file": "Extractor.lua",
+	"priority": 10,
+	"badge_colour": "FF0000",
+	"badge_text_colour": "FFFFFF",
+	"version": "0.1.0",
+	"dependencies": []
+}
