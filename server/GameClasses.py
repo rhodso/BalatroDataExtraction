@@ -20,13 +20,13 @@ class Helpers:
 class PlayingCard:
 
     def __init__(self):
-        self.key = None
-        self.name = None
-        self.pos = None
-        self.seal = None
-        self.type = None
-        self.rank = None
-        self.suit = None
+        self.key = ""
+        self.name = ""
+        self.pos = {}
+        self.seal = ""
+        self.type = ""
+        self.rank = ""
+        self.suit = ""
 
     @staticmethod
     # Returns the rank and suit of a card as an array from the card key
@@ -76,10 +76,10 @@ class PlayingCard:
 
 class JokerCard:
     def __init__(self):
-        self.type = None
-        self.pos = None
-        self.edition = None
-        self.edition_key = None
+        self.type = ""
+        self.pos = {}
+        self.edition = {}
+        self.edition_key = "base"
 
     @staticmethod
     # Returns several JokerCard objects as an array
@@ -96,7 +96,7 @@ class JokerCard:
             j.edition = jkr.get('card_ed')
             if j.edition is None or j.edition == []:
                 j.edition = {}
-                j.edition_key = ""
+                j.edition_key = "base"
             else:
                 j.edition = jkr.get('card_ed')
                 j.edition_key = " " + j.edition.get('key') 
